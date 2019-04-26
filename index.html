@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nicolas Maclean EOL</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <div id="banner">
+        <div id="name">Nicolas Maclean</div>
+    </div>
+    </header>
+
+    <main>
+        <div id="intro">
+            <h>Evidence of Learning #6</h>
+
+            <div class="img">
+                <img src="images/work.png"/>
+                <p2>This is a screenshot of my workflow creating this page</p2>
+            </div>
+
+            <p>This evidence of learning is a collection of JavaScript projects that I have made the past few weeks. To navigate the page easily I have added a table contents underneath this with a link to each section. Each section's header is also a link back to the top of the page. The pictures inside of each section are also links to their respective project. I did this instead of embedding it in the page to preserve the code as much as possible.</p>
+
+            <p>Almost every project is interactive in some way, so I encourage you to try each one out.</p>
+
+            <div id="toc" class="img">
+                <h3>Table Of Contents</h3>
+                <ol>
+                    <li><a href="#1" class="underline" id="a1">Rock, Paper, Scissors... Lizard, Spock</a></li>
+                    <li><a href="#2" class="underline">Circle Objects</a></li>
+                    <li><a href="#3" class="underline">Mouse Event Listeners</a></li>
+                    <li><a href="#4" class="underline">Collision Detection and Physics</a></li>
+                    <li><a href="#5" class="underline">Circular Motion</a></li>
+                    <li><a href="#6" class="underline">Spring Animation</a></li>
+                    <li><a href="#7" class="underline">snake</a></li>
+                    <li><a href="#conclusion" class="underline">Conclusion</a></li>
+                </ol>
+            </div>
+            <!-- change the anchor -->
+        </div>
+        <div id="1" class="section">
+            <h1><a href="#toc">Rock, Paper, Scissors... Lizard, Spock</a></h1>
+
+            <div class="img">
+                <a href="rps.html" target="blank"><img src="images/rps.png"/></a>
+            </div>
+
+            <p1>I have taught myself almost all of the HTML, CSS, and JavaScript thus far with the help of videos, articles, and other online articles. One of the sources I use the most is YouTube. I created a new account separate from my personal account to receive recommendations for new videos about programming. If I find a channel with a lot of good content, I will usually subscribe to stay updated on new topics. This project was made while following a tutorial from freecodecamp.org, which I have linked to at the bottom of this section.</p1>
+                
+            <p1>I never really planned to learn JavaScript, because it can be unncessary for static website that don't have much interactivity. However, I decided to try learning a little bit during spring break, and this project followed the tutorial to create the webpage itself and the JavaScript to make it interactive. I also changed it to Rock, Paper, Scissors, Lizard, Spock and changed some of the styling while I experimented with it. </p1>
+            
+            <p1>Before I began the project, the only other programming language that I had known that was on the same level of JavaScript was Java. They are completely different programming languages, but most programming languages share some similarities. The main hurdle for me to learn JavaScript wasn't learning how to code or program, but to apply the concepts from Java to JavaScript and learn the new syntax of it. This project helped me learn this syntax and how I can apply my programming knowledge to create something.</p1>
+            
+            <p1 ><a href="https://www.youtube.com/watch?v=jaVNP3nIAv0" target="blank" class="underline">Rock, Paper, Scissors Video</a></p1>
+        </div>
+        
+        <div id="2" class="section">
+            <h1><a href="#toc">Circle Objects</a></h1>
+            
+            <div class="img">
+                <a href="circles.html" target="blank"><img src="images/circles.png"/></a>
+            </div>
+            
+            <p1>Yet again I found a tutorial in my YouTube recommendations. This is a common occurrence throughout most of my learning, but I also lean by having to search more specific topics, while creating projects or experimenting.</p1>
+
+            <p1>The project shows the progress that I had made from watching the first 3 videos of an 8 part tutorial series by Chris Courses. The first 2 videos taught how to create canvas in HTML and draw on it JavaScript. It only included how to draw basic shapes like rectangles, circles, and lines. However, in the third video I learned how to create basic animations.</p1>
+
+            <p1>A method to create animations on a canvas is to create animation loop. The loop will run at a specific frame rate and updates based on other code created by the user. So to move a circle from the left side of the screen to the right, the x position of the circle must increase by a given amount each frame.</p1>
+
+            <p1>I also learned my first bit of physics simulation in video. To have a ball collide and bounce off a wall, in an ideal situation, the ball's velocity would flip. The ball would not lose any energy, but it change directions as expected.</p1>
+            
+            <p1><a href="https://www.youtube.com/watch?v=yq2au9EfeRQ&list=PLpPnRKq7eNW3We9VdCfx9fprhqXHwTPXL&index=3" target="blank" class="underline">Canvas Tutorial Series</a></p1>
+        </div>
+
+        <div id="3" class="section">
+            <h1><a href="#toc">Mouse Event Listeners</a></h1>
+
+            <div class="img">
+                <a href="mouseCircles.html" target="blank"><img src="images/mouseCircles.png"/></a>
+            </div>
+
+            <p1>This video taught me how to interact with the canvas using mouse movement through event listeners. Events Listeners are created in JavaScript to to "listen" for specific events. So a click event listener will wait for the user to click on a specific element and run a function when they do. I first learned how to use a click event listener with the rock, paper, scissors, lizard, spock project, but during this one I learned how to use mouse movement.</p1>
+
+            <p1>To take in the mouse input I added a mousemove event listener. It updates a variable with the x and y position of the mouse anytime it moves. I can then take this data and do some fun stuff with it later on with other code.</p1>
+
+            <p1>In this project I started out with the same code, almost, as the previous project to have circles bouncing around the screen randomly. However, the main difference is how each circle updates in each frame. If the circle is not close to the mouse, it shrinks to minimum size and if it close to the mouse, it grows.</p1>
+
+            <div class="img">
+                <a href="mouseCircles2.html" target="blank"><img src="images/mouseCircles2.png"/></a>
+            </div>
+
+            <p1>I set the minimum size of each circle to be 0, so they would not appear to the user showing a blank canvas. As the mouse moves around, though, circles nearby grow in size and become visible. Above I show another version of the original code with the minimum size set to a visible value to show what is going on.</p1>
+
+            <p1><a href="https://www.youtube.com/watch?v=vxljFhP2krI&list=PLpPnRKq7eNW3We9VdCfx9fprhqXHwTPXL&t=3s&index=5" target="blank" class="underline">Interacting with HTML Canvas Video</a></p1>
+        </div>
+
+        <div id="4" class="section">
+            <h1><a href="#toc">Collision Detection and Physics</a></h1>
+
+            <div class="img">
+                <a href="collision.html" target="blank"><img src="images/collision.png"/></a>
+            </div>
+
+            <p1>I learned the basics of collision detection from sixth and seventh videos of the tutorial series by Chris Courses. It is a very basic version of collision detection that can only detect if 2 circles are overlapping. It can't detect where on the circles the collision occurs and only works if both objects are circles.</p1>
+
+            <p1>To calculate if the 2 circles are colliding, I used a little bit of trigonometry to calculate the distances of the circles' centers. If this distance is less than the sum of their radii, the circles are intersecting.</p1>
+
+            <div class="img">
+                <a href="particleCollisions.html" target="blank"><img src="images/particleCollision.png"/></a>
+            </div>
+
+            <p1>During the second part of the video mentioned, he shows how to simulate 2 circles or balls colliding and bouncing off each other in a realistic manner. He used the same method of collision detection from the previous paragraphs. In the video, he uses some pre-made code to calculate the velocities of each ball after collision that I don't quite understand. He gave a brief explanation of the logic, but did not really explain the code. I could not really understand how he calculated it, so I spent some time to do my own research and learn how to do it from other mediums.</p1>
+
+            <p1>I ended up making the above code using equations to calculate the physics portion of the code that I found on a forum. The code is still very buggy and does not work as well I as I wanted it to, but I already spent way too much time on it so I have left it as is.</p1>
+
+            <p1>The collision detection is not perfect, so the circles get caught in each other causing some very strange looking bugs. I think the equations might also be off a little bit off too, but I'm not sure if it is just the collision detection causing all the bugs.</p1>
+
+            <div class="img">
+                <a href="molecules.html" target="blank"><img src="images/particleCollision1.png"/></a>
+            </div>
+
+            <p1>The above is just a really buggy version of the circle collisions from before. I think that it is looks pretty cool, but it was made by pure accident. I was trying to fix the bugs in the collision detection, which caused this version.</p1>
+
+            <p1><a href="https://www.youtube.com/watch?v=XYzA_kPWyJ8&list=PLpPnRKq7eNW3We9VdCfx9fprhqXHwTPXL&index=6" target="blank" class="underline">Collision Detection video part 1</a></p1>            
+        </div>
+        
+        <div id="5" class="section">
+            <h1><a href="#toc">Circular Motion</a></h1>
+
+            <div class="img">
+                <a href="circularMotion.html" target="blank"><img src="images/circlularMotion.png"/></a>
+            </div>
+
+            <p1>This project was made while following the last video of the Chris Courses' series about circular motion. Throughout the animation I have made thus far, I had split all coordinates and velocities into 2 components: an x and y. So for each object, there was an x coordinate, y coordinate, x velocity, and y velocity. I also added a mouse event listener to allow the circles to revolve around the cursor instead of a set point.</p1>
+
+            <p1>A circular motion can also be decomposed into x and y components. Each one oscillates from positive to negative values, so they are best represented with sine and cosine functions. I decided to model the x motion with cosine and y motion with cosine. There are other combinations, but this is what I came upon first.</p1>
+
+            <div id="images">
+                <a href="polar.html" target="blank"><img src="images/polar.png"></a>
+            </div>
+
+            <p1> While I was creating this, my calculus class was going over the concept of polar functions, which are very similar to this topic, So I created a polar graphing calculator. This program allows you to change the polar equation inside the code and has the particle travel along the graph of it.</p1>
+
+            <p1><a href="https://www.youtube.com/watch?v=raXW5J1Te7Y&list=PLpPnRKq7eNW3We9VdCfx9fprhqXHwTPXL&index=8" target="blank" class="underline">Circular Motion Video</a></p1>
+        </div>
+        
+        <div id="6" class="section">
+            <h1><a href="#toc">Spring Animation</a></h1>
+
+            <div class="img">
+                <a href="spring.html" target="blank"><img src="images/spring.png"/></a>
+            </div>
+
+            <p1>This project followed a video created by Val Head about creating a spring motion most commonly seen in things that chase the mouse cursor. It uses simplified physics, so it is not realistic but it looks close enough.</p1>
+
+            <p1>The program relies on a target position, the mouse, and the current position. It calculates a force based on how far it is from the target and moves it with this force towards the target. But the force will increase the ball's speed as it moves towards the target position causing it to overshoot it. The ball will continue going past the target, but it will slow down until it reverses directions and head back towards the target position. This process repeats till the ball stops at the target.</p1>
+
+            <p1>I added range sliders at the bottom of the screen to allow the user to play around with different variables and affect the ball's motion. The drag variable plays the role of friction, decreasing the velocity allowing it to stop. The spring constant variable is strength of the spring, so the higher the value the harder to pull the spring. The trail was added for fun and the higher the number the faster the trail disappears.</p1>
+
+            <p1>The project was supposed to just be a quick, fun physics simulation, but with experimentation and the range sliders it take a lot longer. This project helped me put another physics simulation in my toolbox and helped me learn how to use range sliders and integrate it JavaScript.</p1>
+
+            <p1><a href="https://www.youtube.com/watch?v=VWfXiSUDquw&t=183s" target="blank" class="underline">Spring animation Video</a></p1>
+        </div>
+        
+        
+        <div id="7" class="section">
+            <h1><a href="#toc">snake</a></h1>
+            
+            <div class="img">
+                <a href="snake.html" target="blank"><img src="images/snake.png"/></a>
+            </div>
+
+            <p1>I had attempted to build snake in Java last year, but I quickly gave up because I had no clue how to do it. The Java that I have learned from my computer science classes is focused very largely on algorithms and datastructures, so I don't really know how to create anything with it.</p1>
+
+            <p1>After learning how to use canvas in HTML and animate it with JavaScript, I had confidence that I could do it now. I still did not know exactly how to do it, but I could do a lot of it myself. </p1>
+
+            <p1>One of the major hurdles for me would be to create the interval system that snake uses to update every tenth of a second. It is not very hard to create this, but I simply did not know how to do this. I watched part of the video at the bottom of the section to learn this part. I used a function, setInterval() to call an update function every tenth of a second.</p1>
+
+            <p1>The game does have one major bug at the moment though. Sometimes when the fruit spawns it is not on the canvas, so the player can't continue playing and must refresh the page. An easy hack to fix this would be to add a button the player can press to respawn the fruit. I am not sure if I will ever fix it, but at the moment it works decently well.</p1>
+            
+            <p1><a href="https://www.youtube.com/watch?v=21eSpMtJwrc" target="blank" class="underline">JavaScript Snake Video</a></p1>
+        </div>
+
+        <div class="section">
+            <h><a href="#toc">Conclusion</a>n</h>
+            <p>While learning Java, I have gotten a little side tracked, but I have really enjoyed learning more about animations and it is more content for me put on my website. It has also helped me learn how to use JavaScript to create a more interactive website, which is a very important part of web development.</p>
+
+            <p>The next step to continue advancing my knowledge of JavaScript would be to continue creating more projects. A very popular platform, CodePen, allows users to post their code, so that others may see it. It is a great platform to post code and look at others to learn more JavaScript. If I learn more JavaScript I want to try and use CodePen more, so that I can have collection to show others interested.</p>
+        </div>
+    </main>
+
+    <footer>
+        Copyright &copy; 2019 Nicolas Maclean
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+header{
+    position: sticky;
+    top:0;
+}
+
+#banner{
+    text-align: center;
+    background-color: #5ab0dd;
+    padding: 1rem 1rem;
+}
+
+#name{
+    color: #f7f7f7;
+    font-size: 4rem;
+}
+
+main{
+    clear:both;
+}
